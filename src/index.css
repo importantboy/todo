@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "daisyui"{
+  themes: light --default, dark --prefersdark, abyss;
+}
+
+.cs-shadow{
+   box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.359);
+   border-radius: 5px;
+}
+.background{
+   background: url(./assets/01784fb2-e758-4ed7-ad0b-1bd195549471.jpg) no-repeat;
+   background-size: cover;
+}

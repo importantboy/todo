@@ -16,6 +16,7 @@ const App = () => {
       <div className='bg-overlay absolute w-full h-full -z-2 background opacity-3'> </div>
 
       <div className='todo-container w-1/2 mt-[20%] flex flex-col items-center'>
+        <h1 className='uppercase text-4xl tracking-widest font-bold py-3'>todo list</h1>
 
         <div className='input-control flex gap-2 justify-center w-full'>
           <input type="text" placeholder="Add todo" className="input input-primary" value={data} onChange={(e) => setdata(e.target.value)}/>

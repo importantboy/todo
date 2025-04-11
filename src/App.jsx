@@ -5,7 +5,6 @@ import { addTodo } from './store/slice';
 const App = () => {
   const statearea = useSelector((state) => state.todos);
   const dispatch = useDispatch();
-
   const [data, setdata] = useState('')
   const senddata = () => {
      dispatch(addTodo({name : data , isCompleted : false }))
@@ -24,8 +23,8 @@ const App = () => {
         </div>
 
         <p className='py-4 font-bold uppercase tracking-widest'>todo items</p>
-        {statearea.map((item , index) => {
-          return  <List key={index} item={item}/>
+        {statearea.map((item) => {
+          return  <List key={item.id} item={item}/>
         })}
       </div>
     </div>

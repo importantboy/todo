@@ -15,11 +15,11 @@ const App = () => {
     <div data-theme="abyss" className='w-screen h-screen flex justify-center relative z-1 '>
       <div className='bg-overlay absolute w-full h-full -z-2 background opacity-3'> </div>
 
-      <div className='todo-container w-1/2 mt-[20%] flex flex-col items-center'>
+      <div className='todo-container px-4 w-screen md:w-1/2 mt-[20%] flex flex-col items-center'>
         <h1 className='uppercase text-4xl tracking-widest font-bold py-3'>todo list</h1>
 
-        <div className='input-control flex gap-2 justify-center w-full'>
-          <input type="text" placeholder="Add todo" className="input input-primary" value={data} onChange={(e) => setdata(e.target.value)}/>
+        <div className='input-control  flex flex-col md:flex-row gap-2 justify-center w-full '>
+          <input type="text" placeholder="Add todo" className="input input-primary w-full md:w-auto" value={data} onChange={(e) => setdata(e.target.value)}/>
           <button className="btn btn-outline btn-primary" onClick={senddata}>Add items</button>
         </div>
 
